@@ -1,0 +1,18 @@
+.{
+    .name = "tree-sitter-zig-bindings",
+
+    .version = "0.0.0",
+
+    .dependencies = .{
+        .@"tree-sitter" = .{
+            .url = "https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.23.0.tar.gz",
+            .hash = "1220620866228f8733b24a0ca506964b6958d90f3ab93d70ad6118f9fa27334a52c4",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
