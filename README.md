@@ -5,12 +5,12 @@ A Zig package that provides a complete wrapper around [tree-sitter API](https://
 ## Documentation
 You can find documentation directly from the [tree-sitter API header](https://github.com/tree-sitter/tree-sitter/blob/master/lib/include/tree_sitter/api.h) or on the [tree-sitter website](https://tree-sitter.github.io/tree-sitter/).
 
-All wrapper functions and types are demonstrated in the [tests file](https://github.com/lfcm64/z-tree-sitter/blob/main/src/tests.zig), where you can see Zig equivalents of the C tree-sitter API.
+All wrapper functions and types are demonstrated in the [tests file](https://github.com/lfcm64/z-tree-sitter/tree/main/tests), where you can see Zig equivalents of the C tree-sitter API.
 
 * Run tests with `zig build test -- --all-language`
 * Run an example with `zig build example-<name> -- --language zig`
 
-Example code is included in the [examples](https://github.com/lfcm64/z-tree-sitter/examples) directory.
+Example code is included in the [examples](https://github.com/lfcm64/z-tree-sitter/tree/main/examples) directory.
 
 The --all-languages argument includes all built-in language grammars in z-tree-sitter, which is necessary for running tests.
 
@@ -54,7 +54,7 @@ const zts = b.dependency("zts", .{
 });
 ```
 
-You can then load and use the imported grammar languages by calling `zts.loadLanguage()`, see this [example](https://github.com/lfcm64/z-tree-sitter/examples/parse-input.zig) for more details.
+You can then load and use the imported grammar languages by calling `zts.loadLanguage()`, see this [example](https://github.com/lfcm64/z-tree-sitter/blob/main/examples/parse-input.zig) for more details.
 
 ### Supported languages Grammar
 Here is a list of all available languages grammar:
